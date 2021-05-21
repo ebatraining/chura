@@ -7,13 +7,16 @@
     <meta name="description" content="美らガーデンは那覇空港国内線ターミナル内にあるJAおきなわの直売ショップです。JAならではの新鮮な農産物を空港で手軽にお楽しみいただけます。">
     <meta name="keywords" content="美らガーデン,沖縄,那覇空港,JAおきなわ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex,nofollow,noarchive"> 
+    <meta name="robots" content="noindex,nofollow,noarchive">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_sp.css" media="only screen and (max-width: 640px)">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
     <!--jquery-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
     <!--IE用スクリプト-->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -35,6 +38,10 @@
       font-size:80%;
     }
     </style>
+
+aaaaaaaaaa
+
+
     <![endif]-->
   </head>
   <body>
@@ -57,12 +64,15 @@
           <div><img src="image/img_05.jpg" alt="スライド画像"></div>
           <div><img src="image/img_04.jpg" alt="スライド画像"></div>
         </div>
+
         <div class="message">
-          <p class="p2">帰路に立つ最後の瞬間まで、沖縄の旅を楽しんでほしい。
-          <br>地元ならではの特産物を心ゆくまで味わってほしい。
-          <br>美味しいお土産と思い出を沢山持ち帰ってもらいたい。</p>
-          <p class="p3">生産者と直結しているJAだからこそできる、
-          <br>素材を生かした美味しさをぜひお楽しみください。</p>
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+            <p class="p2">帰路に立つ最後の瞬間まで、沖縄の旅を楽しんでほしい。
+            <br>地元ならではの特産物を心ゆくまで味わってほしい。
+            <br>美味しいお土産と思い出を沢山持ち帰ってもらいたい。</p>
+            <p class="p3">生産者と直結しているJAだからこそできる、
+            <br>素材を生かした美味しさをぜひお楽しみください。</p>
+          </div>
         </div>
       </section>
       <section class="section2">
@@ -71,8 +81,12 @@
         <img class="s2_board" src="image/sec2_title.png" alt="title">
         <p class="s2_title">産地直送の新鮮な野菜と果物を、空港でお楽しみいただけます</p>
         <img class="s2_1" src="image/sec2_1.png" alt="その場で">
+        <p  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800" class="s2_1_txt">ここでしか味わえない<br>フレッシュジュースを<br>帰りのフライト前に。</p>
         <img class="s2_2" src="image/sec2_2.png" alt="機内で">
+        <p  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800" class="s2_2_txt">果実を贅沢に<br>楽しめるデザートや<br>カットフルーツを<br>帰りの機内で。</p>
         <img class="s2_3" src="image/sec2_3.png" alt="お土産に">
+        <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800"  class="s2_3_txt">各種お土産から<br>珍しい果物まで、<br>豊富に取り揃えて<br>おります。</p>
+
         <!--ここからsection3冒頭-->
         <img id="sec3-1pc" class="pc" src="image/sec3_1.png" alt="背景">
         <img id="sec3-1sp" class="sp" src="image/sec3_1sp.png" alt="背景">
@@ -83,30 +97,65 @@
       </section>
       <section class="section3">
         <div id="d1" class="menu_drink">
-          <img src="image/menu1.png" alt="マンゴーパイン">
-          <p class="menu_name">マンゴーパイン</p>
-          <p class="menu_p">一杯分にマンゴー約半分を使用。南国フルーツの濃厚な甘味が楽しめます。</p>
+          <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_drink-1" class="modal">
+              <img src="image/menu1.png" alt="マンゴーパイン">
+            </a>
+            <div id="modal-menu_drink-1" class="modal-contents">
+              <img src="image/menu1.png" alt="マンゴーパイン">
+            </div>
+            <p class="menu_name">マンゴーパイン</p>
+            <p class="menu_p">一杯分にマンゴー約半分を使用。南国フルーツの濃厚な甘味が楽しめます。</p>
+          </div>
         </div>
         <div class="menu_drink">
-          <img src="image/menu2.png" alt="トマトシークワーサー">
-          <p class="menu_name">トマトシークワーサー</p>
-          <p class="menu_p">トマトに沖縄ハーブのフーチバーを加えた野菜メインのジュースです。</p>
+          <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_drink-2" class="modal">
+              <img src="image/menu2.png" alt="トマトシークワーサー">
+            </a>
+            <div id="modal-menu_drink-2" class="modal-contents">
+              <img src="image/menu2.png" alt="トマトシークワーサー">
+            </div>
+            <p class="menu_name">トマトシークワーサー</p>
+            <p class="menu_p">トマトに沖縄ハーブのフーチバーを加えた野菜メインのジュースです。</p>
+          </div>
         </div>
         <img class="line" src="image/section3_line.png" alt="line">
         <div id="d2" class="menu_drink">
-          <img src="image/menu3.png" alt="紅いもココナッツ">
-          <p class="menu_name">紅いもココナッツ</p>
-          <p class="menu_p">紅いものまろやかさと黒糖、ココナッツの香りを楽しめる一杯です。</p>
+          <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_drink-3" class="modal">
+              <img src="image/menu3.png" alt="紅いもココナッツ">
+            </a>
+            <div id="modal-menu_drink-3" class="modal-contents">
+              <img src="image/menu3.png" alt="紅いもココナッツ">
+            </div>
+            <p class="menu_name">紅いもココナッツ</p>
+            <p class="menu_p">紅いものまろやかさと黒糖、ココナッツの香りを楽しめる一杯です。</p>
+          </div>
         </div>
         <div class="menu_drink">
-          <img src="image/menu4.png" alt="パパイヤパッションフルーツ">
-          <p class="menu_name">パパイヤパッションフルーツ</p>
-          <p class="menu_p">パパイヤ果肉とパッションフルーツのほどよい甘味と酸味が特徴です。</p>
+          <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_drink-4" class="modal">
+              <img src="image/menu4.png" alt="パパイヤパッションフルーツ">
+            </a>
+            <div id="modal-menu_drink-4" class="modal-contents">
+              <img src="image/menu4.png" alt="パパイヤパッションフルーツ">
+            </div>
+            <p class="menu_name">パパイヤパッションフルーツ</p>
+            <p class="menu_p">パパイヤ果肉とパッションフルーツのほどよい甘味と酸味が特徴です。</p>
+          </div>
         </div>
         <div class="menu_drink">
-          <img src="image/menu5.png" alt="パインスターフルーツ">
-          <p class="menu_name">パインスターフルーツ</p>
-          <p class="menu_p">2種のパインとスターフルーツを合わせた香り豊かで爽やかな味わいです。</p>
+          <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_drink-5" class="modal">
+              <img src="image/menu5.png" alt="パインスターフルーツ">
+            </a>
+            <div id="modal-menu_drink-5" class="modal-contents">
+              <img src="image/menu5.png" alt="パインスターフルーツ">
+            </div>
+            <p class="menu_name">パインスターフルーツ</p>
+            <p class="menu_p">2種のパインとスターフルーツを合わせた香り豊かで爽やかな味わいです。</p>
+          </div>
         </div>
         <div class="sec3-2">
           <img class="pc" src="image/section3_2.png" alt="背景">
@@ -116,19 +165,40 @@
           <img class="flag" src="image/img-e.png" alt="flag">
         </div>
         <div id="p1" class="menu_pop">
-          <img src="image/menu6.png" alt="パッションココナッツ">
-          <p class="menu_name">パッションココナッツ</p>
-          <p class="menu_p">パッションフルーツの酸味と、ほのかに香るココナッツが新しい味わいです。</p>
+          <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_6" class="modal">
+              <img src="image/menu6.png" alt="パッションココナッツ">
+            </a>
+            <div id="modal-menu_6" class="modal-contents">
+              <img src="image/menu6.png" alt="パッションココナッツ">
+            </div>
+            <p class="menu_name">パッションココナッツ</p>
+            <p class="menu_p">パッションフルーツの酸味と、ほのかに香るココナッツが新しい味わいです。</p>
+          </div>
         </div>
         <div class="menu_pop">
-          <img src="image/menu7.png" alt="黒糖ピーナッツ">
-          <p class="menu_name">黒糖ピーナッツ</p>
-          <p class="menu_p">黒糖のコクのある甘みにピーナッツを合わせた豊かな味わいです。</p>
+          <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_7" class="modal">
+              <img src="image/menu7.png" alt="黒糖ピーナッツ">
+            </a>
+            <div id="modal-menu_7" class="modal-contents">
+              <img src="image/menu7.png" alt="黒糖ピーナッツ">
+            </div>
+            <p class="menu_name">黒糖ピーナッツ</p>
+            <p class="menu_p">黒糖のコクのある甘みにピーナッツを合わせた豊かな味わいです。</p>
+          </div>
         </div>
         <div class="menu_pop">
-          <img src="image/menu8.png" alt="シークワーサージンジャー">
-          <p class="menu_name">シークワーサージンジャー</p>
-          <p class="menu_p">シークワーサーの爽やかな香りに加え、ジンジャーのほのかな辛味を楽しめます。</p>
+          <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
+            <a href="#modal-menu_8" class="modal">
+              <img src="image/menu8.png" alt="シークワーサージンジャー">
+            </a>
+            <div id="modal-menu_8" class="modal-contents">
+              <img src="image/menu8.png" alt="シークワーサージンジャー">
+            </div>
+            <p class="menu_name">シークワーサージンジャー</p>
+            <p class="menu_p">シークワーサーの爽やかな香りに加え、ジンジャーのほのかな辛味を楽しめます。</p>
+          </div>
         </div>
         <img class="line" src="image/section3_line.png" alt="line">
         <div class="sec3-3">
@@ -216,6 +286,13 @@
             return false;
         });
     });
+    </script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+    <script>
+      $('.modal').modaal();
     </script>
   </body>
 </html>
